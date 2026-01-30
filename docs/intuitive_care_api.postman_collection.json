@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "e4347716-c93f-426d-9658-006277259453",
+		"name": "Intuitive Care Challenge API",
+		"description": "Coleção de requisições para a API do Teste Técnico da Intuitive Care.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar Operadoras",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/operadoras?page=1&limit=10&search=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"operadoras"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"description": "Número da página"
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"description": "Itens por página"
+						},
+						{
+							"key": "search",
+							"value": "",
+							"description": "Termo de busca (Razão Social ou Registro ANS)"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detalhes da Operadora",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/operadoras/303975",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"operadoras",
+						"303975"
+					],
+					"description": "Substitua 303975 pelo Registro ANS desejado"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Histórico de Despesas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/operadoras/303975/despesas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"operadoras",
+						"303975",
+						"despesas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Estatísticas Agregadas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/estatisticas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"estatisticas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

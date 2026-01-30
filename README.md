@@ -52,3 +52,6 @@ cd src/4_web/backend
 uvicorn main:app --reload
 ```
 A API estará disponível em `http://localhost:8000/docs`.
+
+---
+Autor: Gustavo
